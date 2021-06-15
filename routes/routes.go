@@ -15,6 +15,7 @@ func Init() *echo.Echo {
 	})
 
 	server.GET("/pegawai", controllers.FetchAllPegawai)
+	server.POST("/pegawai", controllers.StorePegawai)
 
 	return server
 }
